@@ -24,6 +24,7 @@ function deepestChild() {
   let deepest = deep.querySelector("div");
   while (!/<.+?>.*?<.+?>/.test(deepest.innerHTML)) {
     deepest = deepest.querySelector("div");
+    console.log(deepest);
   }
   return deepest;
 }
